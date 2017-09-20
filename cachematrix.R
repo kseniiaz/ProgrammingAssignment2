@@ -4,8 +4,7 @@
 ##  3. Set inverse matrix
 ##  4. Get inverse matrix
 ## 
-## Function cacheSolve uses subfunctions from makeCacheMatrix and first it checks wheter inverse martix has been already calculated,
-## and if not it calculates the inverse matrix by using default function solve()
+
 
 makeCacheMatrix <- function(x = matrix()) {
   nc<-ncol(x)
@@ -27,6 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getInvMatr = getInvMatr)
 }
 
+## Function cacheSolve uses subfunctions from makeCacheMatrix and first it checks wheter inverse martix has been already calculated,
+## and if not it calculates the inverse matrix by using default function solve()
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
